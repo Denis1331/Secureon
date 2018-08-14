@@ -10,8 +10,7 @@ $(document).on('click','.btn-default',function(e){
 		  data: { ip:ip, mac:mac },
 		  success: function(resp){
 		  	if(resp.success == true){
-		  		$('.form-horizontal').submit();
-		  		$('.ip_val').addClass('alert-success').append( "<p> Your information saved" );
+					$('.form-horizontal').submit();
 		  	}else{
 		  		$('.ip_val').addClass('alert-danger').append( "<p> Incorrect ip/mac address </p>" );
 		  	}

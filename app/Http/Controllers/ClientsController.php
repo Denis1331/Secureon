@@ -27,7 +27,7 @@ class ClientsController extends Controller
          
     	$clients = Clients::create($request->except('_token'));
 
-    	return redirect('/');
+    	return back()->with('success','Information saved successfully!');
     }
 
 }
